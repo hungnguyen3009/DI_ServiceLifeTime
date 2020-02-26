@@ -21,8 +21,8 @@ namespace LifetimeDemonstration.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddTransient<GuidService>();
-            //services.AddSingleton<GuidService>();
+            services.AddTransient<GuidService>();
+            services.AddSingleton<GuidService>();
             services.AddScoped<GuidService>();
 
             services.AddMvc()
